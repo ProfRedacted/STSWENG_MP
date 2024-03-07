@@ -1,10 +1,3 @@
-<script setup>
-import AppHeader from '../components/AppHeader.vue'
-import HelloWorld from '../components/HelloWorld.vue'
-import TheWelcome from '../components/TheWelcome.vue'
-
-</script>
-
 <template>
     
     <body>
