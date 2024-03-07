@@ -8,7 +8,7 @@ import TheWelcome from './components/TheWelcome.vue'
 <template>
   <header>
     <AppHeader>
-  </AppHeader>
+    </AppHeader>
   <Router-view>
 
   </Router-view>
