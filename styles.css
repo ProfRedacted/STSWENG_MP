@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: green; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    height: 50px; /
+}
+
+.header h1 {
+    font-size: 52px; 
+    font-weight: bold; 
+}
+
+.beige-layer {
+    background-color: beige; 
+    height: 70px; 
+    padding-top: 40px;
+    padding-left: 400px; 
+    display: flex; 
+    flex-direction: row; 
+}
+.link {
+    color: black; 
+    text-decoration: none; 
+    font-size: 28px; 
+    margin: 0 110px; 
+}
+
+.link:hover {
+    text-decoration: underline; 
+}
+.link.active {
+    color: green; 
+}
+
+.link.active::before {
+    content: '\25A0'; 
+    margin-right: 5px; 
+}
+.button {
+    border: 2px solid black;
+    background-color: #f0f0f0; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    margin-right: 10px; 
+}
+
+.button.active {
+    background-color: green; 
+    color: white; 
+}
+.buttons {
+    margin-top: 20px; 
+    margin-left: 100px;
+}
+
+.big-box {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    margin-top: 20px; 
+    margin-left: 100px;
+    width: 90%; 
+    min-height: 1000px; 
+    overflow-y: auto; 
+    margin-bottom: -100px; 
+}
+.input-container {
+    margin-bottom: 15px; 
+}
+
+.input-container label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.input-container input {
+    width: 20%; 
+    padding: 10px; 
+    border: none; 
+    background-color: #dcdcdc; 
+    border-radius: 5px; 
+}
+#clientInputs {
+    padding-left: 470px; 
+    margin-top: -220px;
+}
+#client, #clientCompany, #clientEmail {
+    width: 25%; 
+}
+#clientContactInputs{
+    width: 100%;
+    padding-left: 970px; 
+    margin-top: -220px;
+}
+#clientAddress{
+    height: 100px;
+}
+
+#itemTable {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 120px;
+}
+
+#itemTable th {
+    border: 1px solid #000; 
+    padding: 8px; 
+}
+
+#itemTable td {
+    border: 1px solid #000; 
+    padding: 8px; 
+}
+#itemTable tbody tr:nth-child(even) {
+    background-color: #dddddd; 
+}
+.add-item-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.add-item-input {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    margin-right: 10px; 
+    margin-top: -25px;
+    width: 30%;
+}
+
+.add-item-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    margin-left: -100px; 
+    margin-top: 74px;
+    width: 5%;
+}
+
+.add-item-button:hover {
+    background-color: #45a049; 
+}
+.quantity-container {
+    margin-top: -26px; 
+}
+.quantity-input {
+    width: 20%; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    font-size: 14px; 
+    margin-top: -94px;
+}
+
+.user-input-container {
+    display: flex; 
+    margin-top: -70px; 
+    margin-left: 900px;
+}
+
+.user-input-item {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.user-input-item label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.rounded-input {
+    width: 50%; 
+    padding: 10px;
+    background-color: #c9c8c8;
+    border: 1px solid #7d7d7d; 
+    border-radius: 9px; 
+}
+
+.options {
+    margin-top: -170px;
+    margin-bottom: 10px; 
+    margin-left: 600px;
+}
+
+.options button {
+    font-size: 25px;
+    display: flex; 
+    flex-direction: row;
+    background-color: transparent; 
+    border: none; 
+    color: green; 
+    text-decoration: underline; 
+    cursor: pointer; 
+    margin-top: 10px;
+}
+
+
+.options button:hover {
+    color: darkgreen; 
+}
+

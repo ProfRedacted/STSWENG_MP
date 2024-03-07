@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>FabriQuote</h1>
+</div>
+
+<div class="beige-layer">
+    <a href="#" class="link">Dashboard</a>
+    <a href="#" class="link">Quota</a>
+    <a href="#" class="link">Materials</a>
+    <a href="#" class="link">Settings</a>
+</div>
+<div class="buttons">
+  <button class="button" id="createButton">Create</button>
+  <button class="button" id="historyButton">History</button>
+</div>
+
+<div class="big-box">
+  <div class="input-container">
+    <label for="quotationRegisterId">Quotation Register ID:</label>
+    <input type="text" id="quotationRegisterId" name="quotationRegisterId">
+</div>
+<div class="input-container">
+    <label for="salesPerson">Sales Person:</label>
+    <input type="text" id="salesPerson" name="salesPerson">
+</div>
+<div class="input-container">
+    <label for="dates">Dates:</label>
+    <input type="text" id="dates" name="dates">
+</div>
+<div class="input-row" id="clientInputs">
+  <div class="input-container">
+      <label for="client">Client:</label>
+      <input type="text" id="client" name="client">
+  </div>
+  <div class="input-container">
+      <label for="clientCompany">Client Company:</label>
+      <input type="text" id="clientCompany" name="clientCompany">
+  </div>
+  <div class="input-container">
+      <label for="clientEmail">Client Email:</label>
+      <input type="email" id="clientEmail" name="clientEmail">
+  </div>
+</div>
+<div class="input-row" id="clientContactInputs">
+  <div class="input-container">
+      <label for="clientContactNumber">Client Contact Number:</label>
+      <input type="text" id="clientContactNumber" name="clientContactNumber">
+  </div>
+  <div class="input-container">
+      <label for="clientAddress">Client Address:</label>
+      <input type="text" id="clientAddress" name="clientAddress">
+  </div>
+  <div class="options">
+    <button id="saveButton">Save</button>
+    <button id="exportPdfButton">Export as PDF</button>
+    <button id="printButton">Print</button>
+  </div>
+</div>
+<table id="itemTable">
+  <thead>
+      <tr>
+          <th>Item#</th>
+          <th>Item Name</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<div class="add-item-container">
+  <input type="text" id="addItemInput" placeholder="Add item..." class="add-item-input">
+  <button id="addItemButton" class="add-item-button">Add</button>
+</div>
+<div class="quantity-container">
+  <input type="text" id="quantityInput" placeholder="Quantity" class="quantity-input">
+</div>
+<div class="user-input-container">
+  <div class="user-input-item">
+      <label for="subtotal">Subtotal:</label>
+      <input type="text" id="subtotal" class="rounded-input">
+  </div>
+  <div class="user-input-item">
+      <label for="taxRate">Tax Rate:</label>
+      <input type="text" id="taxRate" class="rounded-input">
+  </div>
+  <div class="user-input-item">
+      <label for="salesTax">Sales Tax:</label>
+      <input type="text" id="salesTax" class="rounded-input">
+  </div>
+  <div class="user-input-item">
+      <label for="total">Total:</label>
+      <input type="text" id="total" class="rounded-input">
+  </div>
+</div>
+
+</div>
+<div class="history-content" style="display: none;">
+  
+  <h2>History Tab Content</h2>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
